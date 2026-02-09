@@ -1,0 +1,128 @@
+import { PI_RED, PI_PURPLE, NEON, NEON_PURPLE, NEON_GREEN } from "./constants";
+
+export const themes = {
+  dark: {
+    bg: "#0D0B14",
+    bgAlt: "#141020",
+    surface: "#1A1528",
+    surfaceHover: "#231E30",
+    surfaceAlt: "#110E1C",
+    border: "#2A2440",
+    borderHover: "#3D3556",
+    text: "#F5F3FF",
+    textSecondary: "#A8A0BF",
+    textMuted: "#6B6088",
+    accent: NEON,
+    accentP: NEON_PURPLE,
+    accentG: NEON_GREEN,
+    navBg: "rgba(13,11,20,0.92)",
+    tickerBg: "#08060F",
+    inputBg: "#110E1C",
+    scrollThumb: "#3D3556",
+    cardGlow: "0 0 20px rgba(168,85,247,0.06)",
+    accentGlow: "0 0 20px rgba(255,77,94,0.15)",
+    accentGlowP: "0 0 20px rgba(168,85,247,0.15)",
+    glassOverlay: "rgba(13,11,20,0.75)",
+  },
+  light: {
+    bg: "#F7F7F8",
+    bgAlt: "#FFFFFF",
+    surface: "#FFFFFF",
+    surfaceHover: "#FAFAFA",
+    surfaceAlt: "#FAFAFA",
+    border: "#E5E7EB",
+    borderHover: "#D1D5DB",
+    text: "#111827",
+    textSecondary: "#6B7280",
+    textMuted: "#9CA3AF",
+    accent: PI_RED,
+    accentP: PI_PURPLE,
+    accentG: "#10B981",
+    navBg: "rgba(255,255,255,0.95)",
+    tickerBg: "#111827",
+    inputBg: "#FAFAFA",
+    scrollThumb: "#D1D5DB",
+    cardGlow: "0 1px 3px rgba(0,0,0,0.04)",
+    accentGlow: "0 2px 8px rgba(239,51,64,0.25)",
+    accentGlowP: "0 2px 8px rgba(80,0,168,0.12)",
+    glassOverlay: "rgba(0,0,0,0.4)",
+  },
+};
+
+export const STATUS_COLORS = {
+  dark: {
+    Ideation: {
+      bg: "rgba(168,85,247,0.12)",
+      text: "#C4B5FD",
+      border: "rgba(168,85,247,0.25)",
+      dot: NEON_PURPLE,
+    },
+    "In Progress": {
+      bg: "rgba(251,146,60,0.12)",
+      text: "#FDBA74",
+      border: "rgba(251,146,60,0.25)",
+      dot: "#FB923C",
+    },
+    Review: {
+      bg: "rgba(250,204,21,0.12)",
+      text: "#FDE047",
+      border: "rgba(250,204,21,0.25)",
+      dot: "#FACC15",
+    },
+    Published: {
+      bg: "rgba(52,211,153,0.12)",
+      text: "#6EE7B7",
+      border: "rgba(52,211,153,0.25)",
+      dot: NEON_GREEN,
+    },
+  },
+  light: {
+    Ideation: {
+      bg: "#F5F0FF",
+      text: PI_PURPLE,
+      border: "#DDD6FE",
+      dot: PI_PURPLE,
+    },
+    "In Progress": {
+      bg: "#FFF7ED",
+      text: "#C2410C",
+      border: "#FED7AA",
+      dot: "#F97316",
+    },
+    Review: {
+      bg: "#FFFBEB",
+      text: "#92400E",
+      border: "#FDE68A",
+      dot: "#F59E0B",
+    },
+    Published: {
+      bg: "#ECFDF5",
+      text: "#065F46",
+      border: "#A7F3D0",
+      dot: "#10B981",
+    },
+  },
+};
+
+export const TYPE_COLORS = {
+  dark: {
+    "Blog Post": { bg: "rgba(96,165,250,0.12)", color: "#93BBFD" },
+    Video: { bg: "rgba(255,77,94,0.12)", color: NEON },
+    "Press Release": { bg: "rgba(52,211,153,0.12)", color: NEON_GREEN },
+    "Case Study": { bg: "rgba(250,204,21,0.12)", color: "#FDE047" },
+    Whitepaper: { bg: "rgba(168,85,247,0.12)", color: NEON_PURPLE },
+    "Social Post": { bg: "rgba(244,114,182,0.12)", color: "#F472B6" },
+    Email: { bg: "rgba(56,189,248,0.12)", color: "#7DD3FC" },
+    Webinar: { bg: "rgba(251,146,60,0.12)", color: "#FDBA74" },
+  },
+  light: {
+    "Blog Post": { bg: "#EFF6FF", color: "#1D4ED8" },
+    Video: { bg: "#FEF2F2", color: PI_RED },
+    "Press Release": { bg: "#F0FDF4", color: "#15803D" },
+    "Case Study": { bg: "#FFFBEB", color: "#92400E" },
+    Whitepaper: { bg: "#F5F3FF", color: PI_PURPLE },
+    "Social Post": { bg: "#FFF1F2", color: "#BE123C" },
+    Email: { bg: "#F0F9FF", color: "#0369A1" },
+    Webinar: { bg: "#FFF7ED", color: "#C2410C" },
+  },
+};
