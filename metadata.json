@@ -1,0 +1,5 @@
+{
+  "name": "PI Content Dashboard",
+  "description": "A comprehensive content dashboard to sync, track, and visualize content assets from Google Sheets.",
+  "requestFramePermissions": []
+}

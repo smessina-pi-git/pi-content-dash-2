@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PI Content Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Roboto', 'sans-serif'],
+              display: ['Roboto', 'sans-serif'],
+              serif: ['Roboto', 'sans-serif'], // Fallback to Roboto even if serif class is used
+            },
+            colors: {
+              brand: {
+                red: '#ef3340',
+                purple: '#5000a8',
+                dark: '#0e121a',
+                panel: '#171f2d',
+              }
+            },
+            animation: {
+              'ticker': 'ticker 60s linear infinite',
+              'fade-in': 'fadeIn 0.5s ease-out',
+            },
+            keyframes: {
+              ticker: {
+                '0%': { transform: 'translateX(0)' },
+                '100%': { transform: 'translateX(-100%)' },
+              },
+              fadeIn: {
+                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-slate-50 dark:bg-[#0e121a] text-slate-900 dark:text-slate-100 min-h-screen transition-colors duration-300 font-sans antialiased selection:bg-brand-purple selection:text-white">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
